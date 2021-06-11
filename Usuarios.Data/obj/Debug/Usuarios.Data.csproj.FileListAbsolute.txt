@@ -1,0 +1,12 @@
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\bin\Debug\Usuarios.Data.dll.config
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\bin\Debug\Usuarios.Data.dll
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\bin\Debug\Usuarios.Data.pdb
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\bin\Debug\EntityFramework.dll
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\bin\Debug\EntityFramework.xml
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\obj\Debug\Usuarios.Data.csprojAssemblyReference.cache
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\obj\Debug\Usuarios.Data.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\obj\Debug\Usuarios.Data.csproj.CopyComplete
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\obj\Debug\Usuarios.Data.dll
+C:\Users\Eduardo M\source\repos\Usuario_Practica\Usuarios.Data\obj\Debug\Usuarios.Data.pdb

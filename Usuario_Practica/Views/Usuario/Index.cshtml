@@ -1,0 +1,75 @@
+﻿@model Usuario_Practica.Utitlities.OperationResponse<List<Usuario_Practica.Models.UsuarioDTO>>
+@{
+    ViewBag.Title = "Usuarios";
+}
+
+<h2>Usuarios</h2>
+<br />
+<p>    
+    <button class="btn btn-link" onclick="Usuarios.NewUsuario()">Nuevo registro</button>
+</p>
+<div class="container">
+    <div class="row">
+        <div id="divtableInfoUsuario" class="table-responsive">
+            <table id="tbl-usuarios" class="table text-left">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="display:none;" id="divFrmInfoUsuarios">
+        <h6>Modifica tus datos</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <input id="UserId" name="UserId" type="hidden" value="0">
+                <label>Nombre:</label>
+                <input id="txtnombre" maxlength="29" type="text" value="" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label>Edad:</label>
+                <input id="txtedad" type="number" value="" class="form-control" />
+            </div>
+            <div class="col-md-4">
+                <label>Correo;</label>
+                <input id="txtcorreo" type="email" maxlength="40" value="" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button style="float:right;" id="btnInfoUsuarioCancelar" class="btn btn-outline-primary" onclick="Usuarios.Cancela()">Cancelar</button>
+                <button style="float:right;" id="btnInfoUsuarioAceptar" class="btn btn-primary" onclick="Usuarios.SaveUsuario()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="usuariostbl" type="text/x-jquery-tmpl">
+    <tr>
+        <td>${Id}</td>
+        <td>${Nombre}</td>
+        <td>${Edad}</td>
+        <td>${Correo}</td>
+        <td>
+            <button class="btn btn-link" onclick="Usuarios.GetUsuario(${Id})">Editar</button>
+        </td>
+        <td>
+            <button class="btn btn-link" onclick="Usuarios.DeleteUsuario(${Id})">Eliminar</button>
+        </td>
+    </tr>
+</script>
+<script>
+    var endpointBaseURL = "http://localhost:1039/";
+</script>
+@section Scripts{
+    <script src="@Url.Content("~/Scripts/axios.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.tmpl.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/Usuarios.js")"></script>
+    <script src="@Url.Content("~/Scripts/Usuarios-Service.js")"></script>
+    }

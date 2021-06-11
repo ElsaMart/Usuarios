@@ -1,0 +1,35 @@
+﻿@model Usuario_Practica.Models.UsuarioDTO
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Crear Usuario</h2>
+<div class="container">
+    @using (Html.BeginForm())
+    {
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                @Html.TextBoxFor(n => n.Nombre, new { id = "nombre", @class = "form-control", placeholder = "Introduce un nombre" })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="apellidos">Edad:</label>
+                @Html.TextBoxFor(a => a.Edad, new { id = "edad", @class = "form-control", placeholder = "Introduce una edad" })
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                @Html.TextBoxFor(a => a.Correo, new { id = "correo", @class = "form-control", placeholder = "Introduce un Correo" })
+            </div>
+        </div>
+    </div>
+     
+        
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a class="btn btn-danger" href="~/Cliente" role="button">Cancelar</a>
+    }
+</div>
